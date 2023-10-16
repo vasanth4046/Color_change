@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <body>
+        <script type="text/javascript">
+            var i=0;
+            var col=new Array("red","green","orange","blue","yellow");
+            function change()
+            {
+                document.body.style.backgroundColor=col[i];
+                i++;
+                if(i>col.length)
+                {
+                    i=0;
+                }
+                window.setTimeout("change()",500);
+            }
+            window.onload=change();
+        </script>
+        <h1 style="text-align: center;"> student information</h1>
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text"><br><br>
+            <label for="age">Age:</label>
+            <input type="number"><br><br>
+
+        </form>
+    </body>
+</html>
